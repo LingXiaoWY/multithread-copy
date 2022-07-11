@@ -1,4 +1,4 @@
-#include<process_copy.h>
+#include<thread_copy.h>
 
 int main(int argc,char** argv)
 {

@@ -1,7 +1,7 @@
 .PHONY:clean install disclean
 
 CC=gcc
-CFLAGS=-I$(INCLUDE_PATH) -Wall -c -g
+CFLAGS=-I$(INCLUDE_PATH) -lpthread -Wall -c -g
 LDFLAGS=-lpthread
 INCLUDE_PATH=../include
 TARGET=thread_copy

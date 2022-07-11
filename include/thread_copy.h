@@ -13,3 +13,5 @@ int file_block(const char* sfile,int thrnum);
 
 int thread_create(const char* sfile,const char* dfile,int blocksize,int thrnum);
 
+void copy(const char* sfile,const char*dfile,int blocksize,int pos);
+
