@@ -1,0 +1,8 @@
+#include<thread_copy.h>
+
+int main(int argc,char** argv)
+{
+
+	int thrnum;
+	if(argv[3]==0)thrnum = 3;
+	else thr
