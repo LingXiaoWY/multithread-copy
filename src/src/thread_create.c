@@ -15,7 +15,7 @@ struct jpack
 void* jobs(void* arg)
 {
 	//pthread_detach(pthread_self());
-	//struct jpack* pjp = (struct jpack*)arg;
+	struct jpack* pjp = (struct jpack*)arg;
 	//printf("blocksize = %d,flag = %d\n",pjp->blocksize,pjp->flag);
 	/*char str_blocksize[50];
 	char str_pos[50];
@@ -51,6 +51,7 @@ int thread_create(const char* sfile,const char* dfile,int blocksize,int thrnum)
 		sleep(1);
 	}
 	//sleep(1);
+	//手动回收
 	for(flag=0;flag<thrnum;flag++){
 		pthread_cancel(tid[flag]);
 		if(pthread_join(tid[flag],&result)==0){
